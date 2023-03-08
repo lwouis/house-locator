@@ -1,0 +1,22 @@
+{
+  "name": "House Locator",
+  "description": "Locates houses on sale on the map",
+  "version": "1.0.0",
+  "manifest_version": 2,
+  "permissions": [
+    "storage",
+    "activeTab",
+    "declarativeContent"
+  ],
+  "browser_action": {},
+  "background": {
+    "scripts": [
+      "background.js"
+    ],
+    "persistent": false
+  },
+  "content_security_policy": "script-src 'self' https://maps.googleapis.com; object-src 'self'",
+  "web_accessible_resources": [
+    "index.html"
+  ]
+}
